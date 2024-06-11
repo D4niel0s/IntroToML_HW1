@@ -22,6 +22,9 @@ def main():
     hoef = 2*np.exp((-2*n)*np.power(epsilons,2))
     plt.plot(epsilons, hoef, 'b',label='Hoeffding bound')
     plt.plot(epsilons, emp_prob, 'r', label='Empirical probability')
+    plt.xlabel("Epsilon")
+    plt.ylabel("Probability")
+    plt.title("Visualization of the Hoeffding bound")
     plt.legend()
     plt.show()
 
